@@ -17,5 +17,9 @@ def hi_name(name):
 def repeat_phrase_by_int(phrase, num):
     return f"{phrase * num}"
 
+@app.route('/<random>')
+def no_resposne(random):
+    return 'Sorry! No Response, Try again.'
+
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)    # Run the app in debug mode.
